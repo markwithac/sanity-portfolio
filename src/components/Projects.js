@@ -43,7 +43,7 @@ export default function Projects() {
         <div className="projectContainer">
           {projectData && 
             projectData.map((project, index) => (
-              <article onClick={(e) => handleClick(e, index)} style={{cursor: 'pointer'}} >
+              <article className="img-container" onClick={(e) => handleClick(e, index)} >
                 <span className="project-img">
                   <img 
                     id={index}
